@@ -1,0 +1,54 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/testdb #Локально
+    username: datasource-login
+    password: datasource-password
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          jdbc.lob.non_contextual_creation: true
+    hikari:
+      minimum-idle: 3
+      maximum-pool-size: 20
+      idle-timeout: 600000
+      max-lifetime: 10000
+      connection-test-query: SELECT 1
+
+#Для HealthCheck
+management:
+  endpoints.web.exposure.include: health,prometheus
+  metrics:
+    export.prometheus.enabled: true
+    distribution.percentiles-histogram."[http.server.requests]": true
+
+server:
+  port: 8080
+
+service:
+  full-name: srvRequestControlService - Сервис контроля обращений
+  name: srvRequestControlService
+  check:
+    abort-on-check-error:
+      true
+    abort-save-on-check-error:
+      true
+    client_attributes:
+      enabled: true
+    identifiers:
+      enabled: true
+    request_version:
+      enabled: true
+  client-attrs-cache:
+    time: 900000
+  service-request-cache:
+    # 3 d
+    time: 259200000
+
+retry:
+  delay: 3000
+  max-count: 1

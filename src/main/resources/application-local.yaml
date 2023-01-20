@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+server:
+  port: 8081
+
+service:
+  full-name: srvRequestControlService - Сервис контроля запросов
+  name: srvRequestControlService
+  check:
+    abort-on-check-error:
+      true
+    abort-save-on-check-error:
+      true
+    client_attributes:
+      enabled: true
+    identifiers:
+      enabled: true
+    request_version:
+      enabled: true
+  cache-request:
+    time: 900000

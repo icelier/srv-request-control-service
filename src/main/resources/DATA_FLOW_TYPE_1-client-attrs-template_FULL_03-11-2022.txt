@@ -1,0 +1,83 @@
+<ns2:MainRequest xmlns="http://CommonEntities.org" xmlns:ns2="http://tempuri.org/">
+	<ns2:Request>
+		<ClientTypeId clientAttribute="true" errorDescription="ClientTypeId является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+		<ClientINN clientAttribute="true" errorDescription="ClientINN является клиентским атрибутом и не может быть изменен сетевой организацией" personalData = "true"/>
+		<ClientPhone clientAttribute="true" errorDescription="ClientPhone является клиентским атрибутом и не может быть изменен сетевой организацией" personalData = "true"/>
+		<ClientEmail clientAttribute="true" errorDescription="ClientEmail является клиентским атрибутом и не может быть изменен сетевой организацией" personalData = "true"/>
+		<ArrayOfSections>
+			<Section>
+				<Attributes>
+					<SectionAttribute>
+						<Name path="true">PeriodOf</Name>
+						<Value clientAttribute="true" errorDescription="Секция 1. PeriodOf является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+					<SectionAttribute>
+						<Name path="true">isBeneficiary</Name>
+						<Value clientAttribute="true" errorDescription="Секция 1. isBeneficiary является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+					<SectionAttribute>
+						<Name path="true">TypeTC</Name>
+						<Value clientAttribute="true" errorDescription="Секция 1. TypeTC является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+				</Attributes>
+				<AttachedFiles>
+					<FileInfo>
+						<Content clientAttribute="true" errorDescription="Секция 1. Файл BeneficiaryDoc является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+						<Name path="true">BeneficiaryDoc</Name>
+					</FileInfo>
+				</AttachedFiles>
+				<SectionId path="true">1</SectionId>
+			</Section>
+			<Section>
+				<Attributes>
+					<SectionAttribute>
+						<Name path="true">UninhabitedTP</Name>
+						<Value clientAttribute="true" errorDescription="Секция 25. UninhabitedTP является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+					<SectionAttribute>
+						<Name path="true">IndividualInputSwitching</Name>
+						<Value clientAttribute="true" errorDescription="Секция 25. IndividualInputSwitching является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+				</Attributes>
+				<SectionId path="true">25</SectionId>
+			</Section>
+			<Section>
+				<Attributes>
+					<SectionAttribute>
+						<Name path="true">ClientAddressFact_Index</Name>
+						<Value clientAttribute="true" errorDescription="Секция 97. ClientAddressFact_Index является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+					<SectionAttribute>
+						<Name path="true">ClientAddressFact_Region</Name>
+						<Value clientAttribute="true" errorDescription="Секция 97. ClientAddressFact_Region является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+					<SectionAttribute>
+						<Name path="true">ClientAddressFact_subRegion</Name>
+						<Value clientAttribute="true" errorDescription="Секция 97. ClientAddressFact_subRegion является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+					<SectionAttribute>
+						<Name path="true">ClientAddressFact_City</Name>
+						<Value clientAttribute="true" errorDescription="Секция 97. ClientAddressFact_City является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+				</Attributes>
+				<SectionId path="true">97</SectionId>
+			</Section>
+			<Section>
+				<Attributes>
+					<SectionAttribute>
+						<Name path="true">pointsSpecificationsUser</Name>
+						<Value clientAttribute="true" errorDescription="pointsSpecificationsUser является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+					</SectionAttribute>
+				</Attributes>
+				<SectionNumber path="true" prefixDescription="Секция 290, подсекция "/>
+				<SectionId path="true">290</SectionId>
+			</Section>
+        <ArrayOfSections>
+		<AttachedFiles>
+			<FileInfo>
+				<Content clientAttribute="true" errorDescription="Файл ownerDocs является клиентским атрибутом и не может быть изменен сетевой организацией"/>
+				<Name path="true">ownerDocs</Name>
+			</FileInfo>
+		</AttachedFiles>
+	</ns2:Request>
+</ns2:MainRequest>

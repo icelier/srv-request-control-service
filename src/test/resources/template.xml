@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tem:MainRequest xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:main="http://CommonEntities.org" xmlns:tem="http://tempuri.org/">
+    <tem:Request>
+        <main:ClientTypeId clientAttribute="true" errorDescription="ClientTypeId description"></main:ClientTypeId>
+        <main:ClientINN clientAttribute="true" errorDescription="ClientINN description"></main:ClientINN>
+        <main:ClientPhone clientAttribute="true" errorDescription="ClientPhone description"/>
+        <main:ClientEmail clientAttribute="true" errorDescription="ClientEmail description"></main:ClientEmail>
+        <main:RegionId clientAttribute="true" errorDescription="RegionId description"></main:RegionId>
+        <main:RequestTypeId path="true">1</main:RequestTypeId>
+        <main:ArrayOfSections>
+            <main:Section>
+                <main:SectionAttributes>
+                    <main:SectionAttribute>
+                        <main:Name path="true">StatementView</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="StatementView description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">FeedMethod</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="FeedMethod description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">ContractTransferType</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="ContractTransferType description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">EmergencyControl</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="EmergencyControl description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">TypeTC</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="TypeTC description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">TypeDevice</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="TypeDevice description"></main:Value>
+                    </main:SectionAttribute>
+                </main:SectionAttributes>
+                <main:AttachedFiles>
+                    <main:FileInfo>
+                        <main:Content clientAttribute="true" errorDescription="ScanStatement description"></main:Content>
+                        <main:Name path="true">ScanStatement</main:Name>
+                    </main:FileInfo>
+                </main:AttachedFiles>
+                <main:SectionId path="true">1</main:SectionId>
+            </main:Section>
+            <main:Section>
+                <main:SectionAttributes>
+                    <main:SectionAttribute>
+                        <main:Name path="true">attr1</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="attr1 description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">attr2</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="attr2 description"></main:Value>
+                    </main:SectionAttribute>
+                </main:SectionAttributes>
+                <main:SectionId path="true">2</main:SectionId>
+            </main:Section>
+            <main:Section>
+                <main:SectionAttributes>
+                    <main:SectionAttribute>
+                        <main:Name path="true">operationYear</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="operationYear description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">designMonth</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="designMonth description"></main:Value>
+                    </main:SectionAttribute>
+                    <main:SectionAttribute>
+                        <main:Name path="true">operationMonth</main:Name>
+                        <main:Value clientAttribute="true" errorDescription="operationMonth description"></main:Value>
+                    </main:SectionAttribute>
+                </main:SectionAttributes>
+                <main:SectionNumber path="true" prefixDescription="SectionId 6, SectionNumber "></main:SectionNumber>
+                <main:SectionId path="true">6</main:SectionId>
+            </main:Section>
+        </main:ArrayOfSections>
+        <main:AttachedFiles>
+            <main:FileInfo>
+                <main:Content clientAttribute="true" errorDescription="OwnerDoc description"></main:Content>
+                <main:Name path="true">OwnerDoc</main:Name>
+            </main:FileInfo>
+            <main:FileInfo>
+                <main:Content clientAttribute="true" errorDescription="locationPlan description"></main:Content>
+                <main:Name path="true">locationPlan</main:Name>
+            </main:FileInfo>
+        </main:AttachedFiles>
+    </tem:Request>
+</tem:MainRequest>

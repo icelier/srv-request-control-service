@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+    username: datasource-login
+    password: datasource-password
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.H2Dialect
+          hbm2ddl:
+            auto: create
+
+#Для HealthCheck
+management:
+  endpoints.web.exposure.include: health,prometheus
+  metrics:
+    export.prometheus.enabled: true
+    distribution.percentiles-histogram."[http.server.requests]": true
+
+server:
+  port: 8787
+
+service:
+  full-name: srvRequestControlService - Сервис контроля запросов
+  name: srvRequestControlService
+  check:
+    abort-on-check-error:
+      true
+    abort-save-on-check-error:
+      true
+    client_attributes:
+      enabled: true
+    identifiers:
+      enabled: true
+    request_version:
+      enabled: true
+  client-attrs-cache:
+    time: 5000
+  service-request-cache:
+    time: 10000
+  username: username
+  password: password
+
+retry:
+  delay: 3000
+  max-count: 1
